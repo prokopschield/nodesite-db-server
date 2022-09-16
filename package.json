@@ -1,0 +1,25 @@
+{
+	"name": "nodesite-db-server",
+	"version": "0.0.0",
+	"main": "lib/index.js",
+	"bin": {
+		"nodesite-db-server": "lib/cli.js"
+	},
+	"scripts": {
+		"build": "nslibmgr make",
+		"start": "node lib/cli"
+	},
+	"author": "Prokop Schield",
+	"dependencies": {
+		"doge-config": "^0.3.20",
+		"doge-passwd": "^0.1.3",
+		"nscdn-csvdb": "0.1.0-9",
+		"socket.io": "^3.1.2"
+	},
+	"devDependencies": {
+		"@types/node": ">=16",
+		"nslibmgr": "^0.2.20"
+	},
+	"keywords": [],
+	"license": "GPL-3.0-or-later"
+}
