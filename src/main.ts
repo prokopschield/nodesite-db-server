@@ -20,8 +20,6 @@ export async function main() {
 		};
 
 		socket.emit('auth', async (username: string, password: string) => {
-			debugger;
-
 			if (typeof username !== 'string' || typeof password !== 'string') {
 				return close();
 			}
