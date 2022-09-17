@@ -55,7 +55,7 @@ export async function main() {
 					if (
 						typeof name !== 'string' ||
 						typeof template !== 'object' ||
-						!(callback instanceof Function)
+						typeof callback !== 'function'
 					) {
 						return close();
 					}
@@ -83,7 +83,8 @@ export async function main() {
 				) => {
 					if (
 						typeof table !== 'string' ||
-						typeof value !== 'object'
+						typeof value !== 'object' ||
+						typeof callback !== 'function'
 					) {
 						return close();
 					}
@@ -116,7 +117,8 @@ export async function main() {
 				) => {
 					if (
 						typeof table !== 'string' ||
-						typeof value !== 'object'
+						typeof value !== 'object' ||
+						typeof callback !== 'function'
 					) {
 						return close();
 					}
